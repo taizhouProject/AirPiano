@@ -12,7 +12,6 @@ def play_sound(id):
     playsound(f'sounds/{id}.wav')
     flagsounds[id] = False
 
-
 def main():
     global flagsounds
 
@@ -20,7 +19,7 @@ def main():
     mp_hands = mp.solutions.hands
 
     flagsounds = [False, False, False, False, False]
-    cap = cv2.VideoCapture(-1)
+    cap = cv2.VideoCapture(0)
     base_0 = base_1 = base_2 = base_3 = base_4 = -1
     counter = 0
 
